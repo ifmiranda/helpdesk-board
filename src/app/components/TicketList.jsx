@@ -2,9 +2,9 @@
 
 import TicketCard from './TicketCard'; 
 
-export default function TicketList({ tickets, queue, onddToQueue}) {
+export default function TicketList({ tickets, queue, onAddToQueue}) {
     return ( 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-3">
             {tickets.map((t) => (
                 <TicketCard
                     key={t.id}
